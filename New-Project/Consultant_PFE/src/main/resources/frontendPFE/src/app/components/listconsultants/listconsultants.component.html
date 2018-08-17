@@ -1,0 +1,61 @@
+
+        <p>
+          listconsultants works!
+        </p>
+        <div class="form-group">
+          <label>Mot clé :</label>
+          <input type="text" [(ngModel)]="motCle"/>
+          <button class="btn btn-primary" (click)="chercher()">chercher</button>
+        </div>
+        <table class="table table-striped">
+          <thead>
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Email</th>
+          <th>username</th>
+          <th>Mot de Passe</th>
+          <th>Modele de Remuneration</th>
+          <th>Nom de societe</th>
+          <th>operations</th>
+          </thead>
+          <tbody>
+          <tr *ngFor="let c of consultants?.content">
+            <td>{{c.nom}}</td>
+            <td>{{c.prenom}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.userName}}</td>
+            <td>{{c.password}}</td>
+            <td>{{c.modeleRemuneration}}</td>
+            <td>{{c.nomSociete}}</td>
+            <td><button class="btn btn-danger" (click)="deleteConsultant(c)">Delete</button>
+              <button class="btn btn-primary" (click)="updateConsultant(c)">Edit</button>
+            </td>
+
+          </tr>
+          </tbody>
+        </table>
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li [ngClass]="{'active':i==currentpage}" class="indent " *ngFor="let p of pages ;let i=index ">
+
+              <a class="clickable"  (click)="goToPage(i)">{{i}}</a>
+
+
+            </li>
+          </ul>
+
+        </div>
+        <button class="btn btn-primary" (click)="newConsultant(c)">New Consultant</button>
+        <button class="btn btn-primary" (click)="login()">Login</button>
+
+
+
+
+
+
+
+        <!-- /.row -->
+
+        <!-- Main row -->
+
+        <!-- /.row -->

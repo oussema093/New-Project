@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XML>
+
+<configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- Appenders -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>[%d{dd-MM-yyyy HH:mm:ss.SSS}] [%-5level] [%logger{36}.%M\(%line\)] - %msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- TODO Configurer le logger sur le niveau adéquat -->
+	<logger name="tn.esprit.di">
+		<level value="info" />
+	</logger>
+	
+	<!--  Spring loggers -->
+	<logger name="org.springframework.beans">
+		<level value="info" />
+	</logger>
+
+	<logger name="org.springframework.context">
+		<level value="info" />
+	</logger>
+
+	<logger name="org.springframework.core">
+		<level value="info" />
+	</logger>
+	
+	
+
+
+	<!-- Root Logger -->
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+</configuration>

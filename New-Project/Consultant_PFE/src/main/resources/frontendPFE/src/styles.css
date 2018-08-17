@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.spacer{
+
+   margin-top:30px;
+ }
+.indent
+{ text-indent: 30px; }
+.clickable{
+  cursor: pointer;
+}
+.nospacer{
+
+  margin-left:250px;
+
+}
+.kkk{
+
+  margin-left:0px;
+
+}
+.navbar-nav1{margin:7.5px -15px}

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Application Consultant_PFE
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Lenovo
+Implementation-Vendor-Id: tn.esprit.Consultant_PFE
+Build-Jdk: 1.8.0_60
+Implementation-URL: http://projects.spring.io/spring-boot/Consultant_P
+ FE/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
